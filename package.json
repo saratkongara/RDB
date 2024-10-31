@@ -1,0 +1,26 @@
+{
+  "name": "rdb",
+  "version": "1.0.0",
+  "description": "Recreational Database build using JavaScript and NodeJS runtime.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saratkongara/RDB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saratkongara/RDB/issues"
+  },
+  "homepage": "https://github.com/saratkongara/RDB#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "avro-js": "^1.12.0"
+  }
+}
