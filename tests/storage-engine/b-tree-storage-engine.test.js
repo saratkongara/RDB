@@ -7,8 +7,6 @@ describe("BTreeStorageEngine constructor", () => {
   const tempDataPath = path.join(__dirname, "temp_data");
 
   afterEach(() => {
-    console.log("Inside afterEach of first describe block");
-
     // Clean up by removing the temp_data folder if it exists
     if (fs.existsSync(tempDataPath)) {
       fs.rmSync(tempDataPath, { recursive: true });
@@ -61,11 +59,9 @@ describe("BTreeStorageEngine createTable", () => {
   });
 
   afterEach(() => {
-    console.log("Inside afterEach of second describe block");
-    // Clean up the temp directory after each test
-    const schemaFilePath = path.join(tempDataPath, `${tableName}.avsc`);
-    if (fs.existsSync(schemaFilePath)) {
-      fs.unlinkSync(schemaFilePath);
+    // Clean up by removing the temp_data folder if it exists
+    if (fs.existsSync(tempDataPath)) {
+      fs.rmSync(tempDataPath, { recursive: true });
     }
   });
 

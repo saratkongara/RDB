@@ -1,1 +1,0 @@
-{"type":"record","name":"NameRecord","fields":[{"name":"id","type":"int"},{"name":"name","type":"string"}]}
